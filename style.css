@@ -1,247 +1,243 @@
-body 
-{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* container */
+/* Containers */
 
+.container-wrapper {}
 
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
 
+.alert-container {}
 
-
-.callout-container 
-{  
+.callout-container {
     height: 100vh;
+
     background: url('images/whiskeydrop.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
     position: relative;
 }
 
-.quotes-container 
-{
-    background-color: #4a4a4f;
-    height: 50vh;
-    color: rgb(12, 12, 12);
-
-}
-
-.features-container 
-{
-    background-color: rgb(177, 50, 19);
-    color: rgb(16, 16, 16);
-}
-
-.text-uppercase {
-    font-weight: bold;
-}
-
-.navbar 
-{
-    margin-bottom: 30px;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    background-color: black;
-    border-color: black;
-    z-index: 1;    
-}
-
-.navbar-default .navbar-collapse
-{
-    border-color: transparent;
-}
-
-.navbar .navbar-brand 
-{
-    font-weight: bold;
-    color: white;
-}
-
-.navbar .navbar-brand:hover 
-{
-    color: white;
-}
-
-.navbar-default .navbar-nav a 
-{
-    font-weight: bold;
-}
-
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover 
-{
-    color: white;
-    background-color: transparent;
-}
-
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover 
-{
-    color: white;
-}
-
-
-/* jumbatron */
-
-.jumbotron 
-{
-    background-color: transparent;
-}
-
-.jumbotron h1 
-{
-    color: floralwhite;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.jumbotron .lead 
-{
-    color: floralwhite;
-    margin: 30px 0;
-}
-
-.jumbotron .text-muted 
-{
-    color: floralwhite;
-    margin-top: 80px;
-    font-style: italic;
-}
-
-/* block divider */
-
-.block-divider 
-{
-    width: 45px;
-    height: 6px;
-    border: 0px;
-    background-color: #e26009d4;
-}
-
-.opaque-overlay 
-{
+.opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* buttons */
-
-.btn-default
-{
-    background-color: #e26009d4;
-    border-color: #e26009d4;
-    color: white;   
-    border-radius: 17px;    
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
-.btn-default:hover 
-{
-    background-color: rgb(223, 109, 16);
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .25);
+    border: 0;
+}
+
+.navbar-default .navbar-collapse {
     border-color: transparent;
 }
 
-.btn--cta 
-{
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
     font-weight: bold;
-    border-radius: 17px;
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #f05f40;
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron .lead {
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
     width: 160px;
-    
 }
 
-.btn--orange 
-{
+.btn--red {
     color: white;
-    background-color: #e26009d4;
-    border-color: #e26009d4;
+    background-color: #f05f40;
+    border-color: #f05f40;
 }
 
-.btn--orange:hover,
-.btn--orange:active,
-.btn--orange:focus,
-.btn--orange:active:focus 
-{
-    background-color: #c97136d4;
-    border-color: #c97136d4;
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
     color: white;
-}
-
-.blockquotes
-{
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #5f5d5d00;
-    
-}
-
-blockquote footer 
-{
-    color: rgb(247, 230, 230);
-}
-
-.quotes .text-uppercase 
-{
-    color: rgb(15, 14, 14);
-    font-weight: bold;
-    
-}
-
-mark 
-{
-    background-color: #e26009d4;
-}
-
-.btn-features 
-{
-    background-color: rgb(224, 156, 11);    
-    border-color: rgba(226, 96, 9, 0.83);
-    border-radius: 17px;
-}
-
-a {
-    color: rgb(14, 9, 9);
-}
-a:hover 
-{
-    color: rgb(138, 11, 11);
-}
-
-.btn-features:hover
-{
-    background-color: rgb(223, 109, 16);
-}
-
-.navbar-default .navbar-toggle
-{
-    border-color: transparent;
-   
 }
 
 /* Alert */
 
-.alert-container .col-xs-12 
-{
+.alert-container .col-xs-12 {
     padding-left: 0;
     padding-right: 0;
-    border-radius: none;
 }
 
-.page-header 
-{
-    padding-bottom: 0;
-    margin: 0;
-    border: none;
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
 }
- 
+
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Quotes */
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+blockquote.quote {
+    border-left: 0;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+}
