@@ -241,3 +241,7 @@ blockquote.quote {
     margin-top: 10px;
     color: #f05f40;
 }
+
+.navbar-default .navbar-nav>li>a {
+    color: #ff2d00;
+}
